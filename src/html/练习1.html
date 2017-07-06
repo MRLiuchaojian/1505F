@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>练习</title>
+    <script src="common/angular.js"></script>
+    <style>
+        input.ng-invalid{
+            background: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--<div ng-app="myApp">
+        <div ng-init="firstname='John'"></div>
+    <p>
+        <span ng-bind='firstname'></span>
+    </p>
+    <p><input type="text" name="myName" ng-model="name" /></p>
+    <h1>hello {{name}}</h1></div>-->
+    <!--<div ng-app="myApp" ng-init="price=5.0;count=4">
+        <p>我的第一个表达式：{{5+5}}</p>
+        <p>totalPrice:{{price*count}}</p>
+    </div>-->
+    <!--<div ng-app="myApp" ng-controller="myCtrl">
+        <p>firstname: <input type="text" ng-model="firstname"></p>
+        <p>lastname: <input type="text" ng-model="lastname"></p>
+        <p>name:{{firstname+lastname}}</p>
+    </div>-->
+    <!--html5新特性：type类型 number数字、date 日期、month 月份-->
+    <!--<div data-ng-app="" data-ng-init="price=5;count=4">
+        <input type="number" ng-model="count">
+        <input type="number" ng-model="price">
+        <p>totalPrice:{{price*count}}</p>
+        <input type="date" ng-model="date">
+        <input type="month" ng-model="month">
+    </div>-->
+    <!--AngularJS 完美支持数据库的 CRUD（增加Create、读取Read、更新Update、删除Delete）应用程序。
+把实例中的对象想象成数据库中的记录。-->
+    <!--<div ng-app="" data-ng-init="names=[
+    {'name':'Tom','country':'China'},
+    {'name':'Jack','country':'USA'},
+    {'name':'Lucy','country':'Japan'}]">
+        <p>使用ng-repeat循环遍历数组</p>
+        <div data-ng-repeat="x in names">
+            {{x.name+""+x.country}}
+        </div>
+    </div>
+    
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl',function($scope){
+            $scope.firstname='John';
+            $scope.lastname='Tom';
+        });-->
+        <!--验证用户输入,提示信息会在 ng-show 属性返回 true 的情况下显示-->
+        <!--<div ng-app="">
+            <form action="" name="myForm" method="get">
+                <p><input type="text" name="myName"></p>
+                <p>
+                    <input type="password" name="myPwd" ng-model="myPwd">
+                    <span ng-show="myPwd.length>8">密码长度不超过8</span>
+                </p>
+            </form>
+        </div>-->
+        <!--将html输入域中的值与angularJs创建的变量绑定
+        <div ng-app="" ng-init="name='Jone Snow'">
+            姓名：<input type="text" ng-model="name">
+        </div>-->
+        <!--双向绑定 AngularJS的双向绑定， 是指ng-model与HTML的输入域绑定，同时也与AngularJS的属性绑定-->
+        <!--<div ng-app="myApp" ng-controller="myCtrl">
+            姓名: <input type="text" ng-model="name">
+            <h1>你输入了:{{name}}</h1>
+        </div>-->
+        <!--应用状态 ng-model 指令可以为应用数据提供状态值
+
+        dirty 当数据被修改时状态为TRUE，没有被修改过为FALSE。即使修改为原来的值，也为TRUE。
+
+        valid 输入值合法时为TRUE，不合法则为FALSE。
+
+        touched 通过触屏点击为TRUE，没有点击为FALSE。-->
+        <!--<form action="" ng-app="" name="myForm">
+            输入你的名字:
+            <input type="text" name="myAddress" ng-model="text" required>
+        </form>-->
+        <!--input域增加了required状态，当input域没有输入时，ng-model为input域增加ng-invalid样式。反之则删除ng-invalid样式。 ng-model 指令根据表单域的状态添加/移除以下样式： - ng-empty - ng-not-empty - ng-touched - ng-untouched - ng-valid - ng-invalid - ng-dirty - ng-pending - ng-pristine 使用ng-model验证邮箱格式-->
+        <form action="" ng-app="" name="myForm">
+            Email:
+            <input type="email" name="myAddress" ng-model="text">
+            <span ng-show="myForm.myAddress.$error.email">不是一个合法的邮箱地址</span>
+        </form>
+    <script>
+        var app=angular.module('myApp',[]);
+        app.controller('myCtrl',function ($scope) {
+            $scope.name="John Snow";
+        });
+    </script>
+</body>
+
+</html>

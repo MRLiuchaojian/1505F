@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script data-require='angular.js@1.2x' src="common/angular.js"></script>
+</head>
+<body>
+    <level-one>
+        <level-two>
+            <level-three>
+                Hello
+            </level-three>
+        </level-two>
+    </level-one>
+    <script>
+        var app=angular.module('plunker',[]);
+        function createDirective(name){
+            return function(){
+                return {
+                    restrict:'E',
+                    compile:function(tElem,tAttrs){
+                        console.log(name+':compile');
+                        return {
+                            pre:function(scope,iElem,iAttrs){
+                                console.log(name+':pre link');
+                            },
+                            post:function(scope,iElem,iAttrs){
+                                console.log(name+':post link');
+                            }
+                        }
+                    }
+                }
+            }        
+        }
+        app.directive('levelOne',createDirective('levelone'));
+        app.directive('levelTwo',createDirective('leveltwo'));
+        app.directive('levelThree',createDirective('levelThree'));
+    </script> 
+</body>
+</html>

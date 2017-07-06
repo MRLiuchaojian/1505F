@@ -1,0 +1,23 @@
+/* line 1, sece.scss */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 6, sece.scss */
+.box {
+  width: 600px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  /* line 13, sece.scss */
+  .box li {
+    width: 50px;
+    height: 130px;
+    background: lightgrey;
+    float: left;
+    margin: 10px; }
+
+/*# sourceMappingURL=sece.css.map */

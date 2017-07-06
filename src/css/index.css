@@ -1,0 +1,285 @@
+/* line 1, index.scss */
+body, html {
+  width: 100%;
+  height: 100%; }
+  /* line 4, index.scss */
+  body .wrap, html .wrap {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; }
+
+/* line 11, index.scss */
+.wrap-header {
+  width: 100%;
+  height: 3.8rem;
+  background: #000; }
+  /* line 15, index.scss */
+  .wrap-header .header-title {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    line-height: 3.8rem;
+    top: 0;
+    left: 0;
+    right: 0; }
+  /* line 25, index.scss */
+  .wrap-header .icon-group {
+    line-height: 3.8rem;
+    padding: 0 5px;
+    display: -webkit-box;
+    -webkit-box-align: center; }
+    /* line 30, index.scss */
+    .wrap-header .icon-group a {
+      display: block;
+      margin: 0 5px; }
+      /* line 33, index.scss */
+      .wrap-header .icon-group a i {
+        color: #fff;
+        display: block;
+        font-size: 20px; }
+      /* line 38, index.scss */
+      .wrap-header .icon-group a span {
+        font-size: 14px;
+        color: #fff;
+        display: block; }
+      /* line 43, index.scss */
+      .wrap-header .icon-group a ul {
+        display: -webkit-box; }
+        /* line 45, index.scss */
+        .wrap-header .icon-group a ul li {
+          color: #fff;
+          font-size: 34px;
+          margin-left: 0.1rem; }
+    /* line 52, index.scss */
+    .wrap-header .icon-group.left {
+      float: left; }
+    /* line 55, index.scss */
+    .wrap-header .icon-group.right {
+      float: right; }
+
+/* line 61, index.scss */
+.wrap-main {
+  width: 100%;
+  -webkit-box-flex: 1;
+  overflow: auto; }
+  /* line 65, index.scss */
+  .wrap-main .wrap-content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical; }
+    /* line 68, index.scss */
+    .wrap-main .wrap-content .wrap-content-header {
+      background: #DCD6d6;
+      padding: 8px;
+      box-sizing: border-box; }
+      /* line 72, index.scss */
+      .wrap-main .wrap-content .wrap-content-header dl {
+        display: -webkit-box; }
+        /* line 74, index.scss */
+        .wrap-main .wrap-content .wrap-content-header dl dt {
+          width: 11rem; }
+          /* line 76, index.scss */
+          .wrap-main .wrap-content .wrap-content-header dl dt img {
+            width: 100%;
+            display: block; }
+        /* line 81, index.scss */
+        .wrap-main .wrap-content .wrap-content-header dl dd {
+          -webkit-box-flex: 1;
+          margin-left: 5px; }
+          /* line 84, index.scss */
+          .wrap-main .wrap-content .wrap-content-header dl dd .vedio-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            line-height: 2.8rem;
+            padding-left: 0.5rem; }
+          /* line 90, index.scss */
+          .wrap-main .wrap-content .wrap-content-header dl dd .vedio-grade {
+            padding-left: 0.5rem; }
+            /* line 92, index.scss */
+            .wrap-main .wrap-content .wrap-content-header dl dd .vedio-grade img {
+              width: 2rem;
+              display: inline-block; }
+            /* line 96, index.scss */
+            .wrap-main .wrap-content .wrap-content-header dl dd .vedio-grade span {
+              font-size: 1.6rem;
+              color: #666767;
+              display: inline-block;
+              line-height: 2rem; }
+          /* line 103, index.scss */
+          .wrap-main .wrap-content .wrap-content-header dl dd .vedio-look {
+            font-size: 1.2rem;
+            color: #A4A2A1;
+            padding-left: 0.5rem;
+            line-height: 2.2rem; }
+          /* line 109, index.scss */
+          .wrap-main .wrap-content .wrap-content-header dl dd .vedio-aside {
+            font-size: 1.2rem;
+            color: #666767;
+            line-height: 2.2rem; }
+          /* line 114, index.scss */
+          .wrap-main .wrap-content .wrap-content-header dl dd .vedio-data {
+            font-size: 1.2rem;
+            color: #666767;
+            line-height: 2.2rem; }
+          /* line 119, index.scss */
+          .wrap-main .wrap-content .wrap-content-header dl dd .vedio-item {
+            display: -webkit-box;
+            margin-top: 0.7rem; }
+            /* line 122, index.scss */
+            .wrap-main .wrap-content .wrap-content-header dl dd .vedio-item span {
+              width: 6.5rem;
+              height: 2.3rem;
+              font-size: 1.4rem;
+              color: #fff;
+              text-align: center;
+              line-height: 2.3rem;
+              display: block;
+              margin-right: 0.5rem;
+              border-radius: 0.3rem; }
+              /* line 132, index.scss */
+              .wrap-main .wrap-content .wrap-content-header dl dd .vedio-item span.vedio-on {
+                background: #29CC6D; }
+              /* line 135, index.scss */
+              .wrap-main .wrap-content .wrap-content-header dl dd .vedio-item span.vedio-over {
+                background: #CBC6C6;
+                border: 1px solid #fff; }
+    /* line 144, index.scss */
+    .wrap-main .wrap-content .wrap-content-aside {
+      padding: 0.8rem;
+      box-sizing: border-box; }
+      /* line 147, index.scss */
+      .wrap-main .wrap-content .wrap-content-aside .aside-title {
+        font-size: 1.2rem;
+        line-height: 2.4rem; }
+        /* line 150, index.scss */
+        .wrap-main .wrap-content .wrap-content-aside .aside-title .aside-referral {
+          color: #232323;
+          font-weight: bold; }
+        /* line 154, index.scss */
+        .wrap-main .wrap-content .wrap-content-aside .aside-title .aside-name {
+          color: #777777; }
+      /* line 158, index.scss */
+      .wrap-main .wrap-content .wrap-content-aside p {
+        font-size: 1.2rem;
+        color: #777777;
+        line-height: 2rem; }
+    /* line 165, index.scss */
+    .wrap-main .wrap-content .wrap-content-image {
+      padding: 1rem 0;
+      border-bottom: 0.1rem solid #f0f0f0;
+      overflow: hidden; }
+      /* line 169, index.scss */
+      .wrap-main .wrap-content .wrap-content-image .content-image {
+        width: 84.6rem;
+        display: -webkit-box; }
+        /* line 172, index.scss */
+        .wrap-main .wrap-content .wrap-content-image .content-image a {
+          display: block;
+          width: 9rem;
+          margin: 0 0.2rem; }
+          /* line 176, index.scss */
+          .wrap-main .wrap-content .wrap-content-image .content-image a img {
+            width: 100%;
+            display: block; }
+    /* line 183, index.scss */
+    .wrap-main .wrap-content .wrap-content-comment {
+      padding: 1rem 0.8rem;
+      box-sizing: border-box; }
+      /* line 186, index.scss */
+      .wrap-main .wrap-content .wrap-content-comment .content-comment-title {
+        line-height: 2rem;
+        display: -webkit-box; }
+        /* line 189, index.scss */
+        .wrap-main .wrap-content .wrap-content-comment .content-comment-title b {
+          font-size: 1.4rem;
+          color: #292929;
+          display: block;
+          width: 4.5rem; }
+        /* line 195, index.scss */
+        .wrap-main .wrap-content .wrap-content-comment .content-comment-title span {
+          font-size: 1.2rem;
+          color: #292929;
+          display: block;
+          -webkit-box-flex: 1; }
+        /* line 201, index.scss */
+        .wrap-main .wrap-content .wrap-content-comment .content-comment-title a {
+          font-size: 1.2rem;
+          height: 2rem;
+          border: #1494ff 0.1rem solid;
+          color: #1494ff;
+          text-align: center;
+          line-height: 2rem;
+          width: 5rem;
+          display: block;
+          border-radius: 0.3rem; }
+      /* line 213, index.scss */
+      .wrap-main .wrap-content .wrap-content-comment .content-comment-item {
+        height: 3rem;
+        border: 0.1rem solid #f0f0f0;
+        display: -webkit-box;
+        -webkit-box-align: center; }
+        /* line 218, index.scss */
+        .wrap-main .wrap-content .wrap-content-comment .content-comment-item p {
+          font-size: 1.4rem;
+          width: 48%;
+          text-align: center;
+          color: #626262;
+          line-height: 3rem; }
+          /* line 224, index.scss */
+          .wrap-main .wrap-content .wrap-content-comment .content-comment-item p.on {
+            color: #2BCD6F;
+            border-bottom: 0.1rem solid #2BCD6F; }
+        /* line 229, index.scss */
+        .wrap-main .wrap-content .wrap-content-comment .content-comment-item i {
+          width: 4%; }
+        /* line 232, index.scss */
+        .wrap-main .wrap-content .wrap-content-comment .content-comment-item .content {
+          height: 5rem; }
+  /* line 239, index.scss */
+  .wrap-main .menus {
+    width: 70%;
+    height: 4.5rem;
+    border-radius: 2rem;
+    position: fixed;
+    bottom: 4rem;
+    left: 1.5rem;
+    overflow: hidden; }
+    /* line 247, index.scss */
+    .wrap-main .menus .menu {
+      width: 26rem;
+      opacity: .4;
+      background: #999;
+      display: flex;
+      align-items: center; }
+      /* line 253, index.scss */
+      .wrap-main .menus .menu div {
+        flex: 1;
+        text-align: center;
+        font-size: 1rem;
+        color: #FFF; }
+        /* line 258, index.scss */
+        .wrap-main .menus .menu div .fa {
+          font-size: 1.8rem;
+          display: block;
+          color: #fff; }
+
+/* line 268, index.scss */
+.wrap-footer {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  box-sizing: border-box;
+  height: 5rem; }
+  /* line 273, index.scss */
+  .wrap-footer .submit {
+    width: 100%;
+    border: 0;
+    height: 4rem;
+    background: #29CC6D;
+    color: #fff;
+    line-height: 4.4rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 0.5rem; }
+
+/*# sourceMappingURL=index.css.map */
